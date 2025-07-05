@@ -12,6 +12,7 @@ const TOKEN_SIZE: usize = 24;
 const ECHO_REQUEST_BUFFER_SIZE: usize = ICMP_HEADER_SIZE + TOKEN_SIZE;
 type Token = [u8; TOKEN_SIZE];
 
+#[derive(Debug, Clone)]
 pub enum SocketType {
     RAW,
     DGRAM,
